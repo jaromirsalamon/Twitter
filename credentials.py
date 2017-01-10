@@ -29,3 +29,10 @@ class Credentials:
             return self.auth['access_token_secret']
         else:
             return None
+
+    def getScreenName(self):
+        if ('screen_name' in self.auth) and (self.auth['screen_name'] is not None):
+            return self.auth['screen_name']
+        else:
+            return None
+
